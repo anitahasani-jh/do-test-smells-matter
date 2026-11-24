@@ -1,0 +1,21 @@
+variable,role,time,unit,proposed_definition,current_status,notes
+smell_present,treatment,baseline,test_file,One tsDetect smell flag per smell type,available_with_missingness,Keep missing distinct from negative; analyze smell types separately
+post_change_count,outcome,post_baseline,test_file,Number of later commits touching baseline test file,partially_available,Use fixed follow-up window or model exposure time; changes are not defects
+potential_bugfix_commits,outcome_proxy,post_baseline,test_file,Commit-message regex matches associated with file,partially_available,Proxy only; not verified bug fixes
+mutation_score,outcome_candidate,baseline_experiment,test_file_or_project,PIT killed divided by eligible detected mutants under documented score definition,not_measured,Project-level scores cannot be assigned to test files; file attribution must be validated
+test_loc,candidate_confounder,baseline,test_file,Nonblank source lines under current discovery implementation,available_approximate,Inspect smell-rule overlap before adjustment
+assert_count,candidate_confounder,baseline,test_file,Recognized assertion-call pattern count,available_heuristic,Framework-specific validation needed
+test_complexity,candidate_confounder,baseline,test_file,Preselected Java test complexity metric,not_collected,Choose tool and exact metric before extraction
+test_age_days,candidate_confounder,baseline,test_file,Days from file origin to baseline,not_collected,Define file origin and rename handling
+prior_file_changes,candidate_confounder,pre_baseline,test_file,Commit count touching file in fixed pre-baseline window,not_collected,Window length must be preregistered
+prior_contributor_count,candidate_confounder,pre_baseline,test_file,Distinct contributors touching file in fixed pre-baseline window,not_collected,Define author identity normalization
+project_age_days,candidate_confounder,baseline,repository,Days from first repository commit to baseline,placeholder_only,Must be calculated reproducibly
+project_activity,candidate_confounder,pre_baseline,repository,Commit count in fixed pre-baseline window,not_collected,Do not use post-baseline activity
+production_loc,candidate_confounder,baseline,repository_or_module,Production source nonblank LOC,not_collected,Define module scope and generated-code exclusions
+test_to_production_ratio,candidate_confounder,baseline,repository_or_module,Test LOC divided by production LOC,not_collected,Define zero denominator handling
+production_complexity,candidate_confounder,baseline,production_file_or_module,Named complexity metric for mapped production context,not_collected,Production-file mapping currently heuristic
+project_domain,candidate_confounder,baseline,repository,Predefined domain taxonomy,not_collected,Use documented classification and unknown category
+test_framework,candidate_confounder_or_stratifier,baseline,test_file,Framework classification from source/configuration,heuristic_available,Manual validation required
+build_success,selection_variable,experiment_time,repository_or_module,Whether build and PIT execution complete,not_measured,Potential selection mechanism; do not naively adjust as ordinary confounder
+unmeasured_quality,latent_confounder,baseline,repository_or_module,Unobserved engineering quality and practices,not_observed,Address through sensitivity analysis and cautious interpretation
+propensity_score,derived_diagnostic,baseline_model,observation,Estimated probability of the selected smell treatment from approved pre-treatment covariates,not_measured,Used for overlap and matching; not a confounder and not an outcome\npsm_match_status,analysis_diagnostic,analysis,observation,Whether a treated test file received an eligible control match under the prespecified caliper and strata,not_measured,Report matched and unmatched treated units; do not treat matching as proof of exchangeability\n

@@ -1,0 +1,153 @@
+{
+  "_comment": "Generated from GitHub public search. SEE adjacent sampling audit for selection bias and exclusions.",
+  "run_id": "github-sample-20",
+  "output_dir": "../results/github-sample-20",
+  "cache_dir": "../data/repos",
+  "detector_jar": "../tools/TestSmellDetector.jar",
+  "batch_size": 25,
+  "detector_timeout_seconds": 180,
+  "random_seed": 7,
+  "sampling_protocol": {
+    "type": "GitHubSearch_star_ranked_seeded_candidates",
+    "query": "topic:testing language:Java stars:>=20 fork:false archived:false",
+    "seed": 7,
+    "baseline_date_utc": "2025-01-01",
+    "followup_date_utc": "2025-07-01",
+    "discovered_at_utc": "2026-11-21T19:48:11.712145+00:00",
+    "caveats": "Search ranking, public-only sampling, GitHub API caps and candidate exclusions limit external validity."
+  },
+  "repositories": [
+    {
+      "id": "citrusframework_citrus",
+      "source": "https://github.com/citrusframework/citrus.git",
+      "snapshot_ref": "e9f69472f68a3840a37260c01e8405f7b0773212",
+      "followup_ref": "45b09d699607c8e33d045d246a52b0b559aa85de",
+      "github_full_name": "citrusframework/citrus",
+      "github_stars_at_sampling": 487,
+      "baseline_date_utc": "2025-01-01",
+      "followup_date_utc": "2025-07-01",
+      "ahead_by": 128
+    },
+    {
+      "id": "arquillian_arquillian-cube",
+      "source": "https://github.com/arquillian/arquillian-cube.git",
+      "snapshot_ref": "3ab43ce42648fce96faaeaf42a791abedd361824",
+      "followup_ref": "9fa3eb005ababc43a63be32a6c3bc4ff5c26f309",
+      "github_full_name": "arquillian/arquillian-cube",
+      "github_stars_at_sampling": 126,
+      "baseline_date_utc": "2025-01-01",
+      "followup_date_utc": "2025-07-01",
+      "ahead_by": 51
+    },
+    {
+      "id": "shankybnl_MobileAutomationFramework",
+      "source": "https://github.com/shankybnl/MobileAutomationFramework.git",
+      "snapshot_ref": "64597407179ed1aa143ce14028ff049ce9a7daba",
+      "followup_ref": "a44434052117d5ca9027274e97540741040b3e88",
+      "github_full_name": "shankybnl/MobileAutomationFramework",
+      "github_stars_at_sampling": 161,
+      "baseline_date_utc": "2025-01-01",
+      "followup_date_utc": "2025-07-01",
+      "ahead_by": 2
+    },
+    {
+      "id": "qala-io_java-course",
+      "source": "https://github.com/qala-io/java-course.git",
+      "snapshot_ref": "a747bb4eaa66d107d96104a78777c0d7a57fb2c2",
+      "followup_ref": "f0b8b2754e650d52cc5242d2081fb00bf178bcfa",
+      "github_full_name": "qala-io/java-course",
+      "github_stars_at_sampling": 154,
+      "baseline_date_utc": "2025-01-01",
+      "followup_date_utc": "2025-07-01",
+      "ahead_by": 1
+    },
+    {
+      "id": "randoop_randoop",
+      "source": "https://github.com/randoop/randoop.git",
+      "snapshot_ref": "b729e581eceb300f2339206d74c14c3872007569",
+      "followup_ref": "21e71f30c69a84437f346f75c5ffbc0a2bc05263",
+      "github_full_name": "randoop/randoop",
+      "github_stars_at_sampling": 601,
+      "baseline_date_utc": "2025-01-01",
+      "followup_date_utc": "2025-07-01",
+      "ahead_by": 163
+    },
+    {
+      "id": "alipay_ant-application-security-testing-benchmark",
+      "source": "https://github.com/alipay/ant-application-security-testing-benchmark.git",
+      "snapshot_ref": "25bc04ec7f724c3e2048b32d9cb5b1737a7a8dac",
+      "followup_ref": "2bf606e7768911a83f6e7b7cf77cf26bd0b70217",
+      "github_full_name": "alipay/ant-application-security-testing-benchmark",
+      "github_stars_at_sampling": 495,
+      "baseline_date_utc": "2025-01-01",
+      "followup_date_utc": "2025-07-01",
+      "ahead_by": 8
+    },
+    {
+      "id": "vmlens_vmlens",
+      "source": "https://github.com/vmlens/vmlens.git",
+      "snapshot_ref": "953a8ab80c5fba7fd2d76d863faa09cc2e516637",
+      "followup_ref": "9c5ba7cfee7e07305bd1c7b6226e6f2632c6fec5",
+      "github_full_name": "vmlens/vmlens",
+      "github_stars_at_sampling": 154,
+      "baseline_date_utc": "2025-01-01",
+      "followup_date_utc": "2025-07-01",
+      "ahead_by": 183
+    },
+    {
+      "id": "Cornutum_tcases",
+      "source": "https://github.com/Cornutum/tcases.git",
+      "snapshot_ref": "bdd1550920287684244d9596134ef91abf5b5a15",
+      "followup_ref": "7c8dcfd5e32d52f67324f3bac0653810a4a00068",
+      "github_full_name": "Cornutum/tcases",
+      "github_stars_at_sampling": 240,
+      "baseline_date_utc": "2025-01-01",
+      "followup_date_utc": "2025-07-01",
+      "ahead_by": 35
+    },
+    {
+      "id": "andreschaffer_microservices-testing-examples",
+      "source": "https://github.com/andreschaffer/microservices-testing-examples.git",
+      "snapshot_ref": "32a9675f01c3aaea270b891de250abc0901c19c9",
+      "followup_ref": "433c9406b7f788a550a010ca8edb3844740ca555",
+      "github_full_name": "andreschaffer/microservices-testing-examples",
+      "github_stars_at_sampling": 119,
+      "baseline_date_utc": "2025-01-01",
+      "followup_date_utc": "2025-07-01",
+      "ahead_by": 63
+    },
+    {
+      "id": "arquillian_arquillian-core",
+      "source": "https://github.com/arquillian/arquillian-core.git",
+      "snapshot_ref": "be97e2b6bf06a6df3ad87ed46e6b526941ee7562",
+      "followup_ref": "7018f3049b58273772ef17c586547f11f5c939f0",
+      "github_full_name": "arquillian/arquillian-core",
+      "github_stars_at_sampling": 388,
+      "baseline_date_utc": "2025-01-01",
+      "followup_date_utc": "2025-07-01",
+      "ahead_by": 82
+    },
+    {
+      "id": "askimed_nf-test",
+      "source": "https://github.com/askimed/nf-test.git",
+      "snapshot_ref": "1ed4d99e18df6bd311252cf74c645cc9f78f9248",
+      "followup_ref": "62bd674442bf793877449b6fa688930cde79a1ea",
+      "github_full_name": "askimed/nf-test",
+      "github_stars_at_sampling": 194,
+      "baseline_date_utc": "2025-01-01",
+      "followup_date_utc": "2025-07-01",
+      "ahead_by": 5
+    },
+    {
+      "id": "fridujo_rabbitmq-mock",
+      "source": "https://github.com/fridujo/rabbitmq-mock.git",
+      "snapshot_ref": "1ce7fb030efc6d329723e391bd04468fc1c6954f",
+      "followup_ref": "5d79b7f6a4f571d121d8cef4709e161bc4b84ff1",
+      "github_full_name": "fridujo/rabbitmq-mock",
+      "github_stars_at_sampling": 185,
+      "baseline_date_utc": "2025-01-01",
+      "followup_date_utc": "2025-07-01",
+      "ahead_by": 8
+    }
+  ]
+}

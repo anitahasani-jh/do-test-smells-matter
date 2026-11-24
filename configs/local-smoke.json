@@ -1,0 +1,15 @@
+{
+  "repositories": [
+    {
+      "id": "local-pilot",
+      "source": "../detector-sandbox",
+      "snapshot_ref": "fb96829",
+      "followup_ref": "f1e7dd3"
+    }
+  ],
+  "output_dir": "../results/local-smoke",
+  "cache_dir": "../data/repos",
+  "detector_jar": "../tools/TestSmellDetector.jar",
+  "run_id": "local-smoke-001",
+  "detector_timeout_seconds": 240
+}

@@ -1,0 +1,11 @@
+{
+  "status": "protocol_added_not_executed_in_this_environment",
+  "requested_target_options": [
+    100,
+    200,
+    300
+  ],
+  "reason": "The sampling command requires live GitHub API access from the user's machine; this build environment cannot execute the project's outbound Python API requests.",
+  "next_command": "team7 sample --query \"topic:testing\" --count 100 --baseline-date 2025-01-01 --followup-date 2025-07-01 --seed 7 --min-stars 20 --max-candidates 300 --max-pages 3 --output configs/github-sample-100.json",
+  "note": "Do not claim the sample is collected until the command creates a complete audit and team7 run completes."
+}
